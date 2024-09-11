@@ -1,4 +1,11 @@
-const NavBar = () => {
+const NavBar = ({handleShow}) => {
+    const handleScroll = (e, sectionId) => {
+        e.preventDefault();
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
     return (
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
@@ -9,16 +16,16 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active fs-5 me-4 py-3" aria-current="page" href="#">Sobre Mi</a> {/* Aumentar tamaño y espaciado */}
+                <a className="nav-link fs-5 me-4 py-3" aria-current="page" onClick={(e) => handleScroll(e, 'about-me')} href="#">Sobre Mi</a> {/* Aumentar tamaño y espaciado */}
               </li>
               <li className="nav-item">
-                <a className="nav-link fs-5 me-4 py-3" href="#">Mi Experiencia</a>
+                <a className="nav-link fs-5 me-4 py-3" onClick={(e) => handleScroll(e, 'experience')} href="#">Mi Experiencia</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link fs-5 me-4 py-3" href="#">Proyectos</a>
+                <a className="nav-link fs-5 me-4 py-3" onClick={(e) => handleScroll(e, 'projects')} href="#">Proyectos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link fs-5 py-3" href="#">Contacto</a>
+                <a className="nav-link fs-5 py-3" onClick={handleShow} href="#">Contacto</a>
               </li>
             </ul>
           </div>
