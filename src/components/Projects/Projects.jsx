@@ -7,7 +7,7 @@ const projects = [
     image: "https://via.placeholder.com/300x200", // Puedes cambiar esto a la URL real de la imagen
     description: "Better Communication with Each Other",
     github: "#",
-    demo: "#",
+    demo: "https://prueba.saluroblesteran.com/",
   },
   {
     title: "Project Two",
