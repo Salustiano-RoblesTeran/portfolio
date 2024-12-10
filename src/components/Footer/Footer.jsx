@@ -49,7 +49,7 @@ const Footer = ({handleShow}) => {
         <Row className="mt-3">
           <Col>
             <p className="text-muted mb-0">
-              Desarrollado por Salustiano Robles Teran<br/> Ultima Actualizacion 2024.
+              Desarrollado por Salustiano Robles Teran<br/> Ultima Actualizacion Octurbre 2024.
             </p>
           </Col>
         </Row>

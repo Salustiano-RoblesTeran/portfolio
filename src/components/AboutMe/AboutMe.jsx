@@ -25,7 +25,7 @@ const AboutMe = () => {
                 <Card.Body className="text-center">
                   <FaBriefcase size={50} className="mb-3" />
                   <Card.Title>Experiencia</Card.Title>
-                  <Card.Text>1 año de experiencia como freelancer Developer</Card.Text>
+                  <Card.Text>Desarrollador freelance con 1 año de experiencia, especializado en la creación de aplicaciones web. He trabajado en proyectos que incluyen diseño de interfaces, desarrollo backend.</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -34,8 +34,8 @@ const AboutMe = () => {
                 <Card.Body className="text-center">
                   <FaGraduationCap size={50} className="mb-3" />
                   <Card.Title>Educación</Card.Title>
-                  <Card.Text>Graduado fullstack en la academia Rolling Code</Card.Text>
-                  <Card.Text>Estudiante de 3er año de Ingeniería Informática en la Universidad del Norte Santo Tomas de Aquino</Card.Text>
+                  <Card.Text>FullStack Developer: Graduado de la academia Rolling Code, donde adquirí el MERN stack</Card.Text>
+                  <Card.Text>Ing. Informática: Actualmente cursando el 3er año en la Universidad del Norte Santo Tomás de Aquino.</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -43,7 +43,7 @@ const AboutMe = () => {
               <Card className="mt-4">
                 <Card.Body>
                   <Card.Text>
-                  Soy estudiante de tercer año de Ingeniería Informática y un programador apasionado por el desarrollo backend. Me encanta trabajar en la arquitectura y lógica que impulsa las aplicaciones, siempre buscando soluciones eficientes y escalables. A lo largo de mi formación, he adquirido experiencia en diversas tecnologías y lenguajes de programación, y disfruto enfrentando nuevos retos que me permiten seguir aprendiendo y mejorando mis habilidades en el desarrollo de software.
+                  Soy estudiante de tercer año de Ingeniería Informática y un programador apasionado por el desarrollo web. Recientemente recibí mi certificación por parte de Rolling Code School como FullStack Developer, Me encanta trabajar en la arquitectura y lógica que impulsa las aplicaciones, siempre buscando soluciones eficientes y escalables. Disfruto enfrentando nuevos retos que me permiten seguir aprendiendo y mejorando mis habilidades en el desarrollo de software.
                   </Card.Text>
                 </Card.Body>
               </Card>

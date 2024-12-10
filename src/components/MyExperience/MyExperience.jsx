@@ -9,7 +9,7 @@ const skills = [
       { name: "HTML", level: "Avanzado" },
       { name: "CSS", level: "Intermedio" },
       { name: "Bootstrap", level: "Avanzado" },
-      { name: "React", level: "Intermedio" },
+      { name: "React", level: "Avanzado" },
       { name: "JavaScript", level: "Avanzado" },
       { name: "TypeScript", level: "Intermedio" },
 
@@ -31,7 +31,7 @@ const skills = [
 const MyExperience = () => {
   return (
     <Container className="my-5" id='experience'>
-      <h2 className="text-center mb-4"> <span className="fw-bold">Mis Skills</span></h2>
+      <h2 className="text-center mb-4"> <span className="fw-bold">Mis Habilidades</span></h2>
       <Row>
         {skills.map((skillCategory, index) => (
           <Col key={index} md={6} className="mb-4">

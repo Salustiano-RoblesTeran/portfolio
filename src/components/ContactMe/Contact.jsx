@@ -1,45 +1,50 @@
-import React, { useState } from 'react';
-import { Modal, Button } from 'react-bootstrap';
-import emailjs from 'emailjs-com';
+import { Modal, Button, Spinner } from 'react-bootstrap'; // Importamos Spinner
+import Swal from 'sweetalert2'; // Para el popup de confirmación
+import { useState } from 'react';
 
 const Contact = ({ show, handleClose }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false); // Estado de carga
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    const templateParams = {
-      name,
-      email,
-      message,
-    };
+    setIsLoading(true); // Inicia el estado de carga
 
-    // Enviar el mensaje a ti mismo
-    emailjs.send('service_ku4e0cv', 'template_8c20n0v', templateParams, 'U2-FvwKnksgf2wNka')
-      .then((response) => {
-        console.log('Mensaje enviado a ti exitosamente!', response.status, response.text);
-
-        // Enviar correo de confirmación al remitente
-        emailjs.send('service_ku4e0cv', 'template_q2zl61h', { email }, 'U2-FvwKnksgf2wNka')
-          .then(() => {
-            alert('Mensaje enviado exitosamente y se ha enviado un correo de confirmación al remitente.');
-            handleClose(); // Cierra el modal
-            // Reinicia los campos
-            setName('');
-            setEmail('');
-            setMessage('');
-          })
-          .catch((error) => {
-            console.error('Error al enviar el correo de confirmación:', error);
-            alert('Mensaje enviado, pero hubo un problema al enviar el correo de confirmación.');
-          });
-      })
-      .catch((error) => {
-        console.error('Error al enviar el mensaje:', error);
-        alert('Error al enviar el mensaje, por favor intenta de nuevo.');
+    try {
+      const response = await fetch('http://localhost:5001/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
       });
+
+      if (!response.ok) {
+        throw new Error('Error al enviar el mensaje');
+      }
+
+      const result = await response.json();
+      Swal.fire({
+        icon: 'success',
+        title: '¡Mensaje enviado!',
+        text: result.message || 'Tu mensaje ha sido enviado exitosamente.',
+      });
+
+      setName('');
+      setEmail('');
+      setMessage('');
+      handleClose();
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Hubo un problema al enviar el mensaje. Intenta de nuevo más tarde.',
+      });
+    } finally {
+      setIsLoading(false); // Finaliza el estado de carga
+    }
   };
 
   return (
@@ -85,11 +90,17 @@ const Contact = ({ show, handleClose }) => {
             ></textarea>
           </div>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button variant="secondary" onClick={handleClose} disabled={isLoading}>
               Cerrar
             </Button>
-            <Button variant="primary" type="submit">
-              Enviar Mensaje
+            <Button variant="primary" type="submit" disabled={isLoading}>
+              {isLoading ? (
+                <>
+                  <Spinner animation="border" size="sm" /> Enviando...
+                </>
+              ) : (
+                'Enviar Mensaje'
+              )}
             </Button>
           </Modal.Footer>
         </form>
