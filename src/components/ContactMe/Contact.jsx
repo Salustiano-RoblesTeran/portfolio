@@ -13,7 +13,7 @@ const Contact = ({ show, handleClose }) => {
     setIsLoading(true); // Inicia el estado de carga
 
     try {
-      const response = await fetch('https://frabjous-phoenix-7095f0.netlify.app/send-email', {
+      const response = await fetch('https://back-portfolio-fvdd.onrender.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
