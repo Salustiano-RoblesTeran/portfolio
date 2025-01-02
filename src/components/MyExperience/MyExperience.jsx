@@ -6,9 +6,9 @@ const skills = [
   {
     category: "Frontend Development",
     items: [
-      { name: "HTML", level: "Avanzado" },
       { name: "CSS", level: "Intermedio" },
       { name: "Bootstrap", level: "Avanzado" },
+      { name: "Tailwind", level: "Avanzado" },
       { name: "React", level: "Avanzado" },
       { name: "JavaScript", level: "Avanzado" },
       { name: "TypeScript", level: "Intermedio" },
@@ -18,12 +18,12 @@ const skills = [
   {
     category: "Backend Development",
     items: [
-      { name: "MongoDB", level: "Intermedio" },
-      { name: "Node JS", level: "Intermedio" },
-      { name: "Express JS", level: "Intermedio" },
-      { name: "Git", level: "Intermedio" },
-      { name: "Java", level: "Intermedio" },
-      { name: "SpringBoot", level: "Intermedio" },
+      { name: "MongoDB", level: "Avanzado" },
+      { name: "MySQL", level: "Intermedio" },
+      { name: "Node JS", level: "Avanzado" },
+      { name: "Express JS", level: "Avanzado" },
+      { name: "Socket.IO", level: "Intermedio" },
+      { name: "NestJS", level: "Intermedio" },
     ],
   },
 ];

@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer'
 import MyExperience from './components/MyExperience/MyExperience'
 import NavBar from './components/NavBar/NavBar'
 import Profile from './components/ProfileSection/Profile'
-import Projects from './components/Projects/Projects'
+import ProjectsSection from './components/ProjectsSection/Projects'
 import Contact from './components/ContactMe/Contact'
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <Profile handleShow={handleShow}/>
       <AboutMe/>
       <MyExperience/>
-      <Projects/>
+      <ProjectsSection/>
       <Footer handleShow={handleShow}/>
       {/* Modal */}
       <Contact show={showModal} handleClose={handleClose} />

@@ -2,14 +2,24 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import ProfilePicture from '../../assets/profile/profile.png';
-import './Profile.css'; // Puedes definir tus propios estilos en un archivo CSS
+import './Profile.css';
+
+
 
 const Profile = ({handleShow}) => {
+
+    const descargarCV = () => {
+      const enlace = document.createElement('a');
+      enlace.href = '../resume.pdf';
+      enlace.download = 'CV-Salustiano-Robles.pdf';
+      enlace.click();
+    };
+
   return (
     <div className="container my-5 pt-5">
       <div className="row justify-content-center align-items-center">
         {/* Imagen */}
-        <div className="col-md-4 text-center mb-4 mb-md-0"> {/* Añadido mb-4 para margen en la parte inferior */}
+        <div className="col-md-4 text-center mb-4 mb-md-0">
           <img 
             src={ProfilePicture} 
             alt="Salustiano Robles Teran"
@@ -20,13 +30,12 @@ const Profile = ({handleShow}) => {
 
         {/* Información */}
         <div className="col-md-6 text-center text-md-start">
-          <p className="text-muted">¡Hola! mi nombre es</p>
           <h1 className="fw-bold">Salustiano Robles Teran</h1>
           <h4 className="text-secondary">Full Stack Developer</h4>
 
           {/* Botones */}
           <div className="my-4">
-            <Button variant="outline-dark" className="me-2">Download CV</Button>
+            <Button variant="outline-dark" className="me-2" onClick={descargarCV}>Descargar CV</Button>
             <Button variant="dark" onClick={handleShow}>Contact Info</Button>
           </div>
 
