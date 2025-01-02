@@ -16,16 +16,17 @@ const Footer = ({handleShow}) => {
         <Row>
           <Col>
             <h2 className="mb-4">Contactame</h2>
-            <div className="d-flex justify-content-center align-items-center">
-              <a href="saluroblesteran@gmail.com" className="btn btn-outline-dark d-flex align-items-center me-3">
+            <div className="d-flex justify-content-center align-items-center flex-column flex-md-row">
+              <a href="mailto:saluroblesteran@gmail.com" className="btn btn-outline-dark d-flex align-items-center mb-2 mb-md-0 me-md-3">
                 <FaEnvelope className="me-2" />
                 saluroblesteran@gmail.com
               </a>
-              <a href="https://www.linkedin.com/in/salustiano-robles-teran-1b815920a/" target='blank' className="btn btn-outline-dark d-flex align-items-center">
+              <a href="https://www.linkedin.com/in/salustiano-robles-teran-1b815920a/" target='_blank' className="btn btn-outline-dark d-flex align-items-center">
                 <FaLinkedin className="me-2" />
                 LinkedIn
               </a>
             </div>
+
           </Col>
         </Row>
         <Row className="mt-4">
@@ -49,7 +50,7 @@ const Footer = ({handleShow}) => {
         <Row className="mt-3">
           <Col>
             <p className="text-muted mb-0">
-              Desarrollado por Salustiano Robles Teran<br/> Ultima Actualizacion Octurbre 2024.
+              Desarrollado por Salustiano Robles Teran
             </p>
           </Col>
         </Row>

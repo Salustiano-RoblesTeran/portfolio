@@ -65,7 +65,7 @@ const Projects = () => {
                     Github
                   </Button>
                   <Button variant="outline-dark" href={project.demo} target="_blank" rel="noopener noreferrer">
-                    Live Demo
+                    Visitar
                   </Button>
                 </Card.Body>
               </Card>

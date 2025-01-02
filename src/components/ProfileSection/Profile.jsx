@@ -36,7 +36,7 @@ const Profile = ({handleShow}) => {
           {/* Botones */}
           <div className="my-4">
             <Button variant="outline-dark" className="me-2" onClick={descargarCV}>Descargar CV</Button>
-            <Button variant="dark" onClick={handleShow}>Contact Info</Button>
+            <Button variant="dark" onClick={handleShow}>Contactame</Button>
           </div>
 
           {/* Iconos de redes sociales */}
