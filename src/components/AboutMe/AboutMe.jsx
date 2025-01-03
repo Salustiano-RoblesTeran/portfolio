@@ -14,17 +14,6 @@ const AboutMe = () => {
             <Col md={6}>
               <Card className="h-100 shadow-sm">
                 <Card.Body>
-                  <FaBriefcase size={50} className="mb-3" />
-                  <Card.Title>Experiencia</Card.Title>
-                  <Card.Text className='text-start'>
-                    Desarrollador Front-end con 1 año de experiencia creando aplicaciones web dinámicas y eficientes, especializado en frontend y backend para ofrecer interfaces atractivas y sistemas robustos.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6}>
-              <Card className="h-100 shadow-sm">
-                <Card.Body>
                   <FaGraduationCap size={50} className="mb-3" />
                   <Card.Title>Educación</Card.Title>
                   <Card.Text className='text-start'>
@@ -32,6 +21,17 @@ const AboutMe = () => {
                   </Card.Text>
                   <Card.Text className='text-start'>
                     Full Stack Developer – Graduado de Rolling Code Academy (MERN Stack).
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6}>
+              <Card className="h-100 shadow-sm">
+                <Card.Body>
+                  <FaBriefcase size={50} className="mb-3" />
+                  <Card.Title>Experiencia</Card.Title>
+                  <Card.Text className='text-start'>
+                    Desarrollador Front-end con 1 año de experiencia creando aplicaciones web dinámicas y eficientes, especializado en frontend y backend para ofrecer interfaces atractivas y sistemas robustos.
                   </Card.Text>
                 </Card.Body>
               </Card>
