@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import argentina from '../../assets/bandera/argentina.png'
 
 const Footer = ({handleShow}) => {
     const handleScroll = (e, sectionId) => {
@@ -46,9 +47,14 @@ const Footer = ({handleShow}) => {
         </Row>
         <Row className="mt-3">
           <Col>
-            <p className="text-muted mb-0">
-              Desarrollado por Salustiano Robles Teran
-            </p>
+          <p className="text-muted mb-0 d-flex justify-content-center align-items-center flex-column">
+            Desarrollado por Salustiano Robles Terán
+            <br /> 
+            <div className="d-flex align-items-center mt-2">
+              <img className='mx-2' src={argentina} alt="Argentina" />
+              <span>Tucumán, Argentina</span>
+            </div>
+          </p>
           </Col>
         </Row>
       </Container>
