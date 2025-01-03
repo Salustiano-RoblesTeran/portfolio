@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import ProfilePicture from '../../assets/profile/profile.png';
+import profile3 from '../../assets/profile/profile3.png';
 import './Profile.css';
 
 
@@ -21,7 +21,7 @@ const Profile = ({handleShow}) => {
         {/* Imagen */}
         <div className="col-md-4 text-center mb-4 mb-md-0">
           <img 
-            src={ProfilePicture} 
+            src={profile3} 
             alt="Salustiano Robles Teran"
             className="img-fluid rounded-circle"
             style={{ maxWidth: '100%', height: 'auto' }}

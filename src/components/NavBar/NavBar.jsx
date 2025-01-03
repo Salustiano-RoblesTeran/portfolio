@@ -1,3 +1,5 @@
+import { Button } from 'react-bootstrap';
+
 const NavBar = ({handleShow}) => {
     const handleScroll = (e, sectionId) => {
         e.preventDefault();
@@ -17,15 +19,11 @@ const NavBar = ({handleShow}) => {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link fs-5 me-4 py-3" aria-current="page" onClick={(e) => handleScroll(e, 'about-me')} href="#">Sobre Mi</a> {/* Aumentar tamaño y espaciado */}
-              </li>
-              <li className="nav-item">
-                <a className="nav-link fs-5 me-4 py-3" onClick={(e) => handleScroll(e, 'experience')} href="#">Mi Experiencia</a>
-              </li>
-              <li className="nav-item">
+              </li>              <li className="nav-item">
                 <a className="nav-link fs-5 me-4 py-3" onClick={(e) => handleScroll(e, 'projects')} href="#">Proyectos</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link fs-5 py-3" onClick={handleShow} href="#">Contacto</a>
+              <li className="nav-item py-2">
+                <Button variant="dark fs-5 py-2" onClick={handleShow}>Contactame</Button>
               </li>
             </ul>
           </div>

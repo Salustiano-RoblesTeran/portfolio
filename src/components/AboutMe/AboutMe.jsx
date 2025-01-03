@@ -1,49 +1,48 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
-import Profile2 from '../../assets/profile/profile2.jpeg';
+import Profile from '../../assets/profile/profile.png';
 
 const AboutMe = () => {
   return (
-    <Container className="my-5" id='about-me'>
-      <Row className="align-items-center">
-      <Col md={12} className="text-center">
-          <h2>Un poco sobre mi...</h2>
-        </Col>
-        <Col md={4} className="text-center">
-          <img
-            src={Profile2}
-            alt="Perfil"
-            className="img-fluid rounded mb-3"
-            style={{ width: '350px', height: '350px', objectFit: 'cover' }}
-          />
+    <Container className="my-5 text-center" id='about-me'>
+      <Row className="justify-content-center align-items-center">
+        <Col md={12} className="mb-4">
+          <h3>Desarrollador Front-End y Estudiante de Ingeniería Informática</h3>
         </Col>
         <Col md={8}>
-          <Row className="gy-4">
+          <Row className="gy-4 justify-content-center">
             <Col md={6}>
-              <Card className="h-100">
-                <Card.Body className="text-center">
+              <Card className="h-100 shadow-sm">
+                <Card.Body>
                   <FaBriefcase size={50} className="mb-3" />
                   <Card.Title>Experiencia</Card.Title>
-                  <Card.Text className='text-start'>Desarrollador Full Stack con 1 año de experiencia creando aplicaciones web dinámicas y eficientes, especializado en frontend y backend para ofrecer interfaces atractivas y sistemas robustos.</Card.Text>
+                  <Card.Text className='text-start'>
+                    Desarrollador Full Stack con 1 año de experiencia creando aplicaciones web dinámicas y eficientes, especializado en frontend y backend para ofrecer interfaces atractivas y sistemas robustos.
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={6}>
-              <Card className="h-100">
-                <Card.Body className="text-center">
+              <Card className="h-100 shadow-sm">
+                <Card.Body>
                   <FaGraduationCap size={50} className="mb-3" />
                   <Card.Title>Educación</Card.Title>
-                  <Card.Text className='text-start' >Full Stack Developer – Graduado de Rolling Code Academy (MERN Stack).</Card.Text>
-                  <Card.Text className='text-start'>Ingeniería Informática – 4to año en la Universidad del Norte Santo Tomás de Aquino.</Card.Text>
+                  <Card.Text className='text-start'>
+                    Ingeniería Informática – 4to año en la Universidad del Norte Santo Tomás de Aquino.
+                  </Card.Text>
+                  <Card.Text className='text-start'>
+                    Full Stack Developer – Graduado de Rolling Code Academy (MERN Stack).
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={12}>
-              <Card className="mt-4">
+              <Card className="mt-4 shadow-sm">
                 <Card.Body>
+                  <Card.Title>Sobre mí</Card.Title>
                   <Card.Text>
-                  Soy estudiante de 4to año de Ingeniería Informática y desarrollador Full Stack con experiencia en sistemas de gestión web. Trabajo con JavaScript, Node.js y React, creando aplicaciones con lógica sólida y interfaces atractivas. He desarrollado proyectos como un CRM para reparaciones con gestión de clientes y WhatsApp automatizado, y un sistema para cruzar datos de e-commerce con Mercado Pago, generando informes en Excel. Me apasiona crear sin límites y mi objetivo es liderar un equipo de desarrollo, inspirando a otros a construir soluciones innovadoras.
+                    Soy estudiante de 4to año de Ingeniería Informática y desarrollador Full Stack con experiencia en sistemas de gestión web. Trabajo con JavaScript, Node.js y React, creando aplicaciones con lógica sólida y interfaces atractivas. He desarrollado proyectos como un CRM para reparaciones con gestión de clientes y WhatsApp automatizado, y un sistema para cruzar datos de e-commerce con Mercado Pago, generando informes en Excel. Me apasiona crear sin límites y mi objetivo es liderar un equipo de desarrollo, inspirando a otros a construir soluciones innovadoras.
                   </Card.Text>
                 </Card.Body>
               </Card>

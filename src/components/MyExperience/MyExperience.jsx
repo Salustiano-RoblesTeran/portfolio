@@ -6,54 +6,70 @@ const skills = [
   {
     category: "Frontend Development",
     items: [
-      { name: "CSS", level: "Intermedio" },
-      { name: "Bootstrap", level: "Avanzado" },
-      { name: "Tailwind", level: "Avanzado" },
-      { name: "React", level: "Avanzado" },
-      { name: "JavaScript", level: "Avanzado" },
-      { name: "TypeScript", level: "Intermedio" },
-
+      { name: "CSS" },
+      { name: "Bootstrap" },
+      { name: "Tailwind" },
+      { name: "React" },
+      { name: "JavaScript" },
+      { name: "TypeScript" },
     ],
   },
   {
     category: "Backend Development",
     items: [
-      { name: "MongoDB", level: "Avanzado" },
-      { name: "MySQL", level: "Intermedio" },
-      { name: "Node JS", level: "Avanzado" },
-      { name: "Express JS", level: "Avanzado" },
-      { name: "Socket.IO", level: "Intermedio" },
-      { name: "NestJS", level: "Intermedio" },
+      { name: "MongoDB" },
+      { name: "MySQL" },
+      { name: "Node JS" },
+      { name: "Express JS" },
+      { name: "Socket.IO" },
+      { name: "NestJS" },
     ],
   },
 ];
 
 const MyExperience = () => {
   return (
-    <Container className="my-5" id='experience'>
-      <h2 className="text-center mb-4"> <span className="fw-bold">Mis Habilidades</span></h2>
-      <Row>
-        {skills.map((skillCategory, index) => (
-          <Col key={index} md={6} className="mb-4">
+    <Container fluid className="my-5 px-5" id='experience'>
+      <Container>
+        <Row className="justify-content-center">
+          {/* Offset para centrar las dos columnas en el medio */}
+          <Col md={5} lg={4} className="mb-4">
             <Card className="h-100 shadow-sm">
               <Card.Body>
                 <Card.Title className="text-center mb-3 fw-bold">
-                  {skillCategory.category}
+                  {skills[0].category}
                 </Card.Title>
                 <Row>
-                  {skillCategory.items.map((skill, i) => (
+                  {skills[0].items.map((skill, i) => (
                     <Col key={i} xs={6} className="mb-2">
                       <FaCheckCircle className="me-2" />
                       <strong>{skill.name}</strong>
-                      <p className="mb-0">{skill.level}</p>
                     </Col>
                   ))}
                 </Row>
               </Card.Body>
             </Card>
           </Col>
-        ))}
-      </Row>
+
+          <Col md={5} lg={4} className="mb-4">
+            <Card className="h-100 shadow-sm">
+              <Card.Body>
+                <Card.Title className="text-center mb-3 fw-bold">
+                  {skills[1].category}
+                </Card.Title>
+                <Row>
+                  {skills[1].items.map((skill, i) => (
+                    <Col key={i} xs={6} className="mb-2">
+                      <FaCheckCircle className="me-2" />
+                      <strong>{skill.name}</strong>
+                    </Col>
+                  ))}
+                </Row>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </Container>
   );
 };

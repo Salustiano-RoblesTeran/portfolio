@@ -36,9 +36,6 @@ const Footer = ({handleShow}) => {
                 <a href="#about" className="text-dark" onClick={(e) => handleScroll(e, 'about-me')}>Sobre Mi</a>
               </li>
               <li className="list-inline-item mx-3">
-                <a href="#experience" className="text-dark" onClick={(e) => handleScroll(e, 'experience')} >Mi Experiencia</a>
-              </li>
-              <li className="list-inline-item mx-3">
                 <a href="#projects" className="text-dark" onClick={(e) => handleScroll(e, 'projects')}>Proyectos</a>
               </li>
               <li className="list-inline-item mx-3">
