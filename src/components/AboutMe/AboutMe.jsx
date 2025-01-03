@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
-import Profile from '../../assets/profile/profile.png';
 
 const AboutMe = () => {
   return (
@@ -18,7 +17,7 @@ const AboutMe = () => {
                   <FaBriefcase size={50} className="mb-3" />
                   <Card.Title>Experiencia</Card.Title>
                   <Card.Text className='text-start'>
-                    Desarrollador Full Stack con 1 año de experiencia creando aplicaciones web dinámicas y eficientes, especializado en frontend y backend para ofrecer interfaces atractivas y sistemas robustos.
+                    Desarrollador Front-end con 1 año de experiencia creando aplicaciones web dinámicas y eficientes, especializado en frontend y backend para ofrecer interfaces atractivas y sistemas robustos.
                   </Card.Text>
                 </Card.Body>
               </Card>
