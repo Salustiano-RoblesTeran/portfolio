@@ -40,7 +40,7 @@ const AboutMe = () => {
               <Card className="mt-4 shadow-sm">
                 <Card.Body>
                   <Card.Title>Sobre mí</Card.Title>
-                  <Card.Text>
+                  <Card.Text className='text-start'>
                     Soy estudiante de 4to año de Ingeniería Informática y desarrollador Full Stack con experiencia en sistemas de gestión web. Trabajo con JavaScript, Node.js y React, creando aplicaciones con lógica sólida y interfaces atractivas. He desarrollado proyectos como un CRM para reparaciones con gestión de clientes y WhatsApp automatizado, y un sistema para cruzar datos de e-commerce con Mercado Pago, generando informes en Excel. Me apasiona crear sin límites y mi objetivo es liderar un equipo de desarrollo, inspirando a otros a construir soluciones innovadoras.
                   </Card.Text>
                 </Card.Body>
