@@ -2,12 +2,12 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 
-const AboutMe = () => {
+const AboutMe = ({ texts }) => {
   return (
-    <Container className="my-5 text-center" id='about-me'>
+    <Container className="my-5 text-center" id="about-me">
       <Row className="justify-content-center align-items-center">
         <Col md={12} className="mb-4">
-          <h3>Desarrollador Front-End y Estudiante de Ingeniería Informática</h3>
+          <h3>{texts.aboutMe.title}</h3>
         </Col>
         <Col md={8}>
           <Row className="gy-4 justify-content-center">
@@ -15,12 +15,12 @@ const AboutMe = () => {
               <Card className="h-100 shadow-sm">
                 <Card.Body>
                   <FaGraduationCap size={50} className="mb-3" />
-                  <Card.Title>Educación</Card.Title>
-                  <Card.Text className='text-start'>
-                    Ingeniería Informática – 4to año en la Universidad del Norte Santo Tomás de Aquino.
+                  <Card.Title>{texts.aboutMe.education.title}</Card.Title>
+                  <Card.Text className="text-start">
+                    {texts.aboutMe.education.university}
                   </Card.Text>
-                  <Card.Text className='text-start'>
-                    Full Stack Developer – Graduado de Rolling Code Academy (MERN Stack).
+                  <Card.Text className="text-start">
+                    {texts.aboutMe.education.bootcamp}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -29,9 +29,9 @@ const AboutMe = () => {
               <Card className="h-100 shadow-sm">
                 <Card.Body>
                   <FaBriefcase size={50} className="mb-3" />
-                  <Card.Title>Experiencia</Card.Title>
-                  <Card.Text className='text-start'>
-                    Desarrollador Front-end con 1 año de experiencia creando aplicaciones web dinámicas y eficientes, especializado en frontend y backend para ofrecer interfaces atractivas y sistemas robustos.
+                  <Card.Title>{texts.aboutMe.experience.title}</Card.Title>
+                  <Card.Text className="text-start">
+                    {texts.aboutMe.experience.description}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -39,9 +39,9 @@ const AboutMe = () => {
             <Col md={12}>
               <Card className="mt-4 shadow-sm">
                 <Card.Body>
-                  <Card.Title>Sobre mí</Card.Title>
-                  <Card.Text className='text-start'>
-                    Soy estudiante de 4to año de Ingeniería Informática y desarrollador Full Stack con experiencia en sistemas de gestión web. Trabajo con JavaScript, Node.js y React, creando aplicaciones con lógica sólida y interfaces atractivas. He desarrollado proyectos como un CRM para reparaciones con gestión de clientes y WhatsApp automatizado, y un sistema para cruzar datos de e-commerce con Mercado Pago, generando informes en Excel. Me apasiona crear sin límites y mi objetivo es liderar un equipo de desarrollo, inspirando a otros a construir soluciones innovadoras.
+                  <Card.Title>{texts.aboutMe.aboutMe.title}</Card.Title>
+                  <Card.Text className="text-start">
+                    {texts.aboutMe.aboutMe.description}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -51,6 +51,6 @@ const AboutMe = () => {
       </Row>
     </Container>
   );
-}
+};
 
 export default AboutMe;

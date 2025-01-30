@@ -8,21 +8,31 @@ import Profile from './components/ProfileSection/Profile'
 import ProjectsSection from './components/ProjectsSection/Projects'
 import Contact from './components/ContactMe/Contact'
 
+import en from './locales/en.json';
+import es from './locales/es.json';
+
 function App() {
+  const [language, setLanguage] = useState('es');
   const [showModal, setShowModal] = useState(false);
 
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
 
+  const handleLanguageChange = () => {
+    setLanguage((prevLang) => (prevLang === 'es' ? 'en' : 'es')); // Alterna entre 'es' y 'en'
+  };
+
+  const texts = language === 'es' ? es : en;
+
   return (
     <>
-      <NavBar handleShow={handleShow}/>
+      <NavBar handleShow={handleShow} handleLanguageChange={handleLanguageChange} texts={texts} currentLanguage={language}/>
       <Profile handleShow={handleShow}/>
-      <AboutMe/>
+      <AboutMe texts={texts}/>
       <MyExperience/>
-      <ProjectsSection/>
-      <Footer handleShow={handleShow}/>
-      {/* Modal */}
+      <ProjectsSection texts={texts}/>
+      <Footer handleShow={handleShow} texts={texts}/>
+
       <Contact show={showModal} handleClose={handleClose} />
 
     </>

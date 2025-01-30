@@ -28,10 +28,10 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+const Projects = ({ texts }) => {
   return (
     <Container className="my-5" id='projects'>
-      <h2 className="text-center mb-4">Mis Proyectos <span className="fw-bold">Destacados</span></h2>
+      <h2 className="text-center mb-4">{texts.projects.title}</h2>
       <Row>
         {projects.map((project, index) => (
           <Col key={index} md={4} className="mb-4">

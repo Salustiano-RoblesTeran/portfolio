@@ -1,0 +1,42 @@
+{
+    "navbar": {
+      "brand": "Salustiano Robles Terán",
+      "aboutMe": "Sobre Mi",
+      "projects": "Proyectos",
+      "contact": "Contáctame",
+      "changeLanguage": "Cambiar Idioma"
+    },
+    "aboutMe": {
+      "title": "Desarrollador Front-End y Estudiante de Ingeniería Informática",
+      "education": {
+        "title": "Educación",
+        "university": "Ingeniería Informática – 4to año en la Universidad del Norte Santo Tomás de Aquino.",
+        "bootcamp": "Full Stack Developer – Graduado de Rolling Code Academy (MERN Stack)."
+      },
+      "experience": {
+        "title": "Experiencia",
+        "description": "Desarrollador Front-end con 1 año de experiencia creando aplicaciones web dinámicas y eficientes, especializado en frontend y backend para ofrecer interfaces atractivas y sistemas robustos."
+      },
+      "aboutMe": {
+        "title": "Sobre mí",
+        "description": "Soy estudiante de 4to año de Ingeniería Informática y desarrollador Full Stack con experiencia en sistemas de gestión web. Trabajo con JavaScript, Node.js y React, creando aplicaciones con lógica sólida y interfaces atractivas. He desarrollado proyectos como un CRM para reparaciones con gestión de clientes y WhatsApp automatizado, y un sistema para cruzar datos de e-commerce con Mercado Pago, generando informes en Excel. Me apasiona crear sin límites y mi objetivo es liderar un equipo de desarrollo, inspirando a otros a construir soluciones innovadoras."
+      }
+    },
+    "projects": {
+        "title": "Mis Proyectos Destacados",
+        "devTreeDescription": "Crea un perfil, y manten todas tus redes sociales en un solo lugar.",
+        "fitnessTrackDescription": "Gestiona tu rutina de gimnasio, registra tu progreso, y mucho más.",
+        "bienesRaicesDescription": "Plataforma donde publicar, buscar y comprar casas, departamentos y mucho más.",
+        "githubButton": "Github",
+        "visitButton": "Visitar"
+      },
+    "footer": {
+        "contactTitle": "Contactame",
+        "about": "Sobre Mi",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "developedBy": "Desarrollado por",
+        "location": "Tucumán, Argentina"
+    }
+  }
+  
