@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import i18n from './i18n'
 
 import AboutMe from './components/AboutMe/AboutMe'
 import Footer from './components/Footer/Footer'
@@ -15,11 +16,16 @@ function App() {
   const [language, setLanguage] = useState('es');
   const [showModal, setShowModal] = useState(false);
 
+  useEffect(() => {
+    const language = i18n.language.split('-')[0]; 
+    setLanguage(language)
+  }, []);
+
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
 
   const handleLanguageChange = () => {
-    setLanguage((prevLang) => (prevLang === 'es' ? 'en' : 'es')); // Alterna entre 'es' y 'en'
+    setLanguage((prevLang) => (prevLang === 'es' ? 'en' : 'es')); 
   };
 
   const texts = language === 'es' ? es : en;

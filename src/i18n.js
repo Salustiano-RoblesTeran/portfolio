@@ -20,7 +20,7 @@ i18n
       escapeValue: false,
     },
     detection: {
-        order: ['querystring', 'cookie', 'localStorage', 'navigator'], // Prioridad de detección
+        order: ['querystring', 'cookie', 'localStorage', 'navigator'],
         caches: ['localStorage', 'cookie'], // Guardar idioma seleccionado
       },
   });
