@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <NavBar handleShow={handleShow} handleLanguageChange={handleLanguageChange} texts={texts} currentLanguage={language}/>
-      <Profile handleShow={handleShow}/>
+      <Profile handleShow={handleShow} texts={texts}/>
       <AboutMe texts={texts}/>
       <MyExperience/>
       <ProjectsSection texts={texts}/>

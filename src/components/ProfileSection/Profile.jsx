@@ -6,7 +6,7 @@ import './Profile.css';
 
 
 
-const Profile = ({handleShow}) => {
+const Profile = ({handleShow, texts}) => {
 
     const descargarCV = () => {
       const enlace = document.createElement('a');
@@ -35,8 +35,8 @@ const Profile = ({handleShow}) => {
 
           {/* Botones */}
           <div className="my-4">
-            <Button variant="outline-dark" className="me-2" onClick={descargarCV}>Descargar CV</Button>
-            <Button variant="dark" onClick={handleShow}>Contactame</Button>
+            <Button variant="outline-dark" className="me-2" onClick={descargarCV}>{texts.profile.downloadCV}</Button>
+            <Button variant="dark" onClick={handleShow}>{texts.profile.contactMe}</Button>
           </div>
 
           {/* Iconos de redes sociales */}

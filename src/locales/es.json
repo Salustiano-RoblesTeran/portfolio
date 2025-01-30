@@ -37,6 +37,12 @@
         "contact": "Contacto",
         "developedBy": "Desarrollado por",
         "location": "Tucumán, Argentina"
-    }
+    },
+    "profile": {
+        "altText": "Salustiano Robles Teran",
+        "role": "Desarrollador Full Stack",
+        "downloadCV": "Descargar CV",
+        "contactMe": "Contáctame"
+      }
   }
   
