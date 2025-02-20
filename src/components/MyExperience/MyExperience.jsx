@@ -6,10 +6,10 @@ const skills = [
   {
     category: "Frontend Development",
     items: [
-      { name: "CSS" },
+      { name: "ReactJs" },
+      { name: "NextJs" },
       { name: "Bootstrap" },
       { name: "Tailwind" },
-      { name: "React" },
       { name: "JavaScript" },
       { name: "TypeScript" },
     ],
@@ -17,12 +17,12 @@ const skills = [
   {
     category: "Backend Development",
     items: [
-      { name: "MongoDB" },
+      { name: "Java" },
+      { name: "Spring Boot" },
       { name: "MySQL" },
+      { name: "MongoDB" },
       { name: "Node JS" },
-      { name: "Express JS" },
-      { name: "Socket.IO" },
-      { name: "NestJS" },
+      { name: "Docker" },
     ],
   },
 ];

@@ -31,7 +31,7 @@ const Profile = ({handleShow, texts}) => {
         {/* Información */}
         <div className="col-md-6 text-center text-md-start">
           <h1 className="fw-bold">Salustiano Robles Teran</h1>
-          <h4 className="text-secondary">Full Stack Developer</h4>
+          <h4 className="text-secondary">Back-End Developer</h4>
 
           {/* Botones */}
           <div className="my-4">

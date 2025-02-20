@@ -7,7 +7,7 @@
       "changeLanguage": "Change Language"
     },
     "aboutMe": {
-      "title": "Front-End Developer and Computer Engineering Student",
+      "title": "Back-End Developer and Computer Engineering Student",
       "education": {
         "title": "Education",
         "university": "Computer Engineering – 4th year at Universidad del Norte Santo Tomás de Aquino.",
@@ -19,7 +19,7 @@
       },
       "aboutMe": {
         "title": "About Me",
-        "description": "I am a 4th-year Computer Engineering student and Full Stack Developer with experience in web management systems. I work with JavaScript, Node.js, and React, creating applications with solid logic and attractive interfaces. I've developed projects like a CRM for repairs with customer management and automated WhatsApp integration, and a system for cross-referencing e-commerce data with Mercado Pago, generating Excel reports. I am passionate about creating without limits, and my goal is to lead a development team, inspiring others to build innovative solutions."
+        "description": "I am a 4th-year Computer Engineering student and Backend Developer with experience in developing REST APIs using Java and Spring Boot. I have worked on integrating relational databases, authentication with JWT and Spring Security, and generating reports in Excel and PDF. I have also implemented online payments with Mercado Pago, optimized queries with Redis, and deployed applications using Docker. I am passionate about building scalable and efficient solutions, and my goal is to lead a development team, inspiring others to innovate."
       }
     },
     "projects": {
